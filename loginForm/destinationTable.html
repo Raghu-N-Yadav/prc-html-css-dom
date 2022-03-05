@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-image: url(./plane.jpeg);
+        }
+
+        h1 {
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid gray;
+            display: block;
+            background-color: black;
+            transition: 0.5s;
+        }
+
+        h1:hover {
+            color: crimson;
+            background-color: whitesmoke;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 70px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: skyblue;
+        }
+
+        th {
+            border: 2px solid black;
+            color: rgb(245, 238, 233);
+            text-align: center;
+            padding: 20px;
+            transition: 0.3s;
+            background-color: tomato;
+        }
+
+        td {
+            border: 1px solid rgb(24, 18, 18);
+            color: rgb(52, 17, 138);
+            padding: 5px;
+            text-align: center;
+            transition: 0.3s;
+            font-weight: 700;
+        }
+
+        tr {
+            border: 3px solid black;
+            transition: 0.3s;
+        }
+
+        #footer {
+            color: rgb(243, 232, 232);
+            position: absolute;
+            bottom: 30%;
+            right: 54%;
+        }
+
+        th:hover {
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        td:hover {
+            background-color: red;
+            color: black;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Destinations</title>
+</head>
+
+<body>
+    <h1>Top Destination Around the World</h1>
+    <table>
+        <tr>
+            <th>Place</th>
+            <th>Places to visit</th>
+            <th>Countary</th>
+            <th>Life Expectancy</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Bangalore</td>
+            <td>Lalbagh Botanical Garden</td>
+            <td rowspan="3">India</td>
+            <td rowspan="3">69.66 years </td>
+        </tr>
+        <tr>
+            <td>Bangalore Palace</td>
+        </tr>
+        <tr>
+            <td>Tipu Sultan's Summer Palace</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">London</td>
+            <td>The British Museum</td>
+            <td rowspan="2">England</td>
+            <td rowspan="2">79.0 years </td>
+        </tr>
+        <tr>
+            <td>Tower of London</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Rome</td>
+            <td>TColosseum</td>
+            <td rowspan="3">Italy</td>
+            <td rowspan="3">83.20 years </td>
+        </tr>
+        <tr>
+            <td>Pantheon</td>
+        </tr>
+        <tr>
+            <td>Trevi Fountain</td>
+        </tr>
+
+    </table>
+
+    <div id="footer">
+        <span>All rights reserved @RaghuNyadav</span>
+    </div>
+</body>
+
+</html>

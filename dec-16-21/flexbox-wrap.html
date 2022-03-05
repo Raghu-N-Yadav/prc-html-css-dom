@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox wrap 0 — children overflowing</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            background: purple;
+            height: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            line-height: 100px;
+            margin: 0;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        /* Add your flexbox CSS below here */
+
+        section {
+            display: flex;
+            /* flex-wrap: wrap-reverse; */
+            /* flex-direction: row; */
+            flex-flow: wrap;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* align-content: stretch; */
+            gap: 10px 100px;
+
+        }
+
+        #a1 {
+            /* flex: 10px; */
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 5; */
+            /* flex-basis: 40%; */
+            /* flex: 100px; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sample flexbox example</h1>
+    </header>
+
+    <section>
+        <article id="a1">
+            <h2>First article</h2>
+
+            <p>Tacos actually microdosing, pour-over .</p>
+        </article>
+
+        <article>
+            <h2>Second article</h2>
+
+            <p>Tacos actually </p>
+        </article>
+
+        <article>
+            <h2>Third article</h2>
+
+            <p>Tacos actually microdosing,</p>
+
+            <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui.
+            </p>
+        </article>
+
+        <article>
+            <h2>Fourth article</h2>
+
+            <p>Tacos actually microdosing, </p>
+        </article>
+
+        <article>
+            <h2>Fifth article</h2>
+
+            <p>Tacos actually microdosing, </p>
+        </article>
+
+        <!-- <article>
+            <h2>Sixth article</h2>
+
+            <p>Tacos actually microdosing, </p>
+
+            <p>Cray food truck brunch, XOXO +1 keffiyeh pickled
+            </p>
+        </article>
+
+        <article>
+            <h2>Seventh article</h2>
+
+            <p>Tacos actually microdosing, pour-over semiotics </p>
+        </article>
+
+        <article>
+            <h2>Eighth article</h2>
+
+            <p>Tacos actually microdosing, pour-over semiotics </p>
+        </article>
+
+        <article>
+            <h2>Ninth article</h2>
+
+            <p>Tacos actually microdosing, pour-over semiotics b</p>
+
+            <p>Cray food truck brunch, XOXO +1 keffiyeh pickled c
+            </p>
+        </article>
+
+        <article>
+            <h2>Tenth article</h2>
+
+            <p>Tacos actually microdosing, pour-over </p>
+        </article>
+
+        <article>
+            <h2>Eleventh article</h2>
+
+            <p>Tacos actually microdosing, pour-over s</p>
+        </article>
+
+        <article>
+            <h2>Twelfth article</h2>
+
+            <p>Tacos actually microdosing, pour-over semiotics </p>
+
+            <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray
+            </p>
+        </article> -->
+    </section>
+</body>
+
+</html>

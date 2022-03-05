@@ -1,0 +1,8 @@
+Block level elements begains at a new line
+Inline elements do not begain at a new line. Fall into normal flow
+    - maintain only their width
+
+Heading are block level elements
+
+<nav></nav> -- is used to contain navigational links whitin the same page or on the external page
+    - All links must be inside ana anchor <a></a>

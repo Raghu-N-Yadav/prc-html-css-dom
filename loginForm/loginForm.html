@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bee.com</title>
+    <link rel="stylesheet" href="./loginForm.css">
+</head>
+
+<body>
+    <section id="form">
+        <div class="heading">
+            <div class="img">
+                <img src="./icons8-bee-85.png" alt="bee">
+            </div>
+            <h1>Be a <span>BEE</span></h1>
+            <h2>Fly around the World</h2>
+            <span id="quote">Sign up. It's Quick and Easy !!</span>
+            <hr>
+        </div>
+        <div id="formLayout">
+            <form id="myForm">
+                <div class="main-area">
+                    <div class="input-field">
+                        <input type="text" name="fname" id="fname" placeholder=" First Name" required>
+                        <input type="text" name="surname" id="surname" placeholder="Surname">
+
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" placeholder="Set a user name" required>
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div>
+                            <label for="mobile">Mob</label>
+                            <input type="tel" required name="mobile" id="mobile" placeholder="+91(Mobile number)">
+                        </div>
+                        <div>
+                            <label for="dob">DOB</label>
+                            <input type="date" required name="dob" id="dob">
+                        </div>
+                        <div>
+                            <label>Gender</label>
+
+                            <input type="radio" name="gen" id="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gen" id="female">
+                            <label for="female">Female</label>
+                            <input type="radio" name="gen" id="custom">
+                            <label for="male">Custom</label>
+                        </div>
+                        <div>
+                            <label for="age">Age</label>
+                            <input type="number" required id="age" name="age" min=18 max="45" placeholder="18+">
+                        </div>
+                        <div>
+                            <br>
+                            <span>Interset in Travelling :</span>
+                            <br>
+                            <label for="interest">0%</label>
+                            <input type="range" name="interset" id="interset" min="0" max="100">
+                            <label for="interest">100%</label>
+                        </div>
+                        <div>
+                            <br>
+                            <label for="favdestination">Favourite Destination</label>
+                            <select name="favdestination" id="favdestination">
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="pak">Pakistan</option>
+                                <option value="japan">Japan</option>
+                                <option value="india">INDIA</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tc" id="tc" required>
+                            <span>Agree to <a id="tcSpan" href="https://www.business-standard.com/terms-conditions"
+                                    target="_blank">Terms &
+                                    Conditions</a></span>
+                        </div>
+                        <div id="button">
+                            <input type="submit" id="signUp" value="Sign Up">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+    <div id="destinations">
+        <span>Click here to see
+            <a href="./destinationTable.html" target="_blank">Top Destinations</a></span>
+    </div>
+    <footer>
+        <div id="footer">
+            <span>All rights reserved @RaghuNyadav</span>
+        </div>
+    </footer>
+
+    <script>
+        myForm.addEventListener('submit', (e) => {
+            // e.preventDefault();
+            // formLayout.style.backgroundColor = 'white'
+
+            // formLayout.innerHTML = '<p>Login created</p>'
+            alert(`login created for ${e.target.elements.fname.value}`)
+        })
+    </script>
+</body>
+
+</html>

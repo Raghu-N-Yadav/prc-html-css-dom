@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: white;
+}
+#form {
+    width: 80%;
+    height: 100%;
+    border: 3px solid red;
+    margin: 0 auto;
+    background-image: url(../img/bee.webp);
+    opacity: 9;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+}
+#form::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -1;
+}
+#form .heading {
+    text-align: center;
+}
+#form .heading h1{
+    color: rgb(192, 152, 152);
+    font-weight: 700;
+    margin-top: 10px;
+}
+#form .heading h2 {
+    font-weight: 200;
+    color: rgb(196, 132, 132);
+    font-size: 22px;
+    margin-top: 10px;
+}
+#form .heading span {
+    color: tomato;
+}
+#form .heading #quote {
+    color: whitesmoke;
+    font-size: 13px;
+}
+
+.input-field{
+    margin-top: 10px;
+    color: white;
+    margin: 20px;
+}
+
+input{
+    margin-top: 17px;
+    color: red;
+    border: 1px solid blue;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#favdestination {
+    margin-top: 10px;
+}
+#tcSpan {
+    color: red;
+    text-decoration: none;
+}
+#button {
+    text-align: center;
+}
+#signUp {
+    background-color: black;
+    color: white;
+    border:2px solid black;
+    transition: 0.3s;
+}
+#signUp:hover{
+    color: rgb(119, 33, 33);
+    background-color: whitesmoke;
+
+}
+#destinations a {
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+#destinations a:hover{
+    color: red;
+    background-color: white;
+}
+#destinations {
+    margin-top: 30px;
+}
+#destinations span {
+    color:cadetblue;
+    font-weight: 600;
+    margin-left: 10%;
+}
+
+#footer {
+    color: brown;
+    margin-top:50px;
+    margin-left: 10%;
+}

@@ -1,0 +1,21 @@
+.parent {
+    background-color: red;
+    position: relative;
+    height: 200vh;
+}
+.child-one {
+    background-color: rosybrown;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.child-two {
+    background-color: rgb(46, 194, 46);
+    position: fixed;
+    left: 0;
+}
+.child-three {
+    background-color: slateblue;
+    position: sticky;
+    top: 0;
+}
